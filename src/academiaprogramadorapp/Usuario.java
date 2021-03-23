@@ -19,7 +19,7 @@ public class Usuario {
     void verificar(String e1) {
         for (Equipamento equip : listaequipamentos) {
             if(equip.getNome().equalsIgnoreCase(e1)){
-                JOptionPane.showMessageDialog(null, "Nome: " + equip.getNome() + "\nPreço do equipamento: R$" + equip.getPreço() + "\nNúmero de série: " + equip.getNmrserie() + "\nFabricante: " +  equip.getFabricante() + "\nData de fabricação: " + equip.getData2());
+                JOptionPane.showMessageDialog(null, "Nome: " + equip.getNome() + "\nNúmero de série: " + equip.getNmrserie() + "\nFabricante: " +  equip.getFabricante());
             }
         }
     }
@@ -66,7 +66,7 @@ public class Usuario {
         }
     }
     
-    void manutençãoon(String e1) {
+    void manutencao(String e1) {
         for (Equipamento equip : listaequipamentos) {
             
             if(equip.getNome().equalsIgnoreCase(e1)){
